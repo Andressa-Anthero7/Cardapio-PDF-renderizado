@@ -18,13 +18,15 @@
 <body>
     <header class="m-0 p-0">
         <div id="div-logo" class="col-12 text-center text-dark mt-3">
-            <!-- Aqui exibirá o PDF -->
-            <canvas id="pdf-render"></canvas>
+            
         </div>
     </header>  
 
     <!-- Container -->
-    <div class="container-fluid m-0 px-1" id="container"></div>
+    <div class="container-fluid m-0 px-1" id="container">
+        <!-- Aqui exibirá o PDF -->
+            <canvas id="pdf-render"></canvas>
+    </div>
 
      <!-- Boostrap 4 JS CDN -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -33,7 +35,7 @@
 
     <script>
         // URL do PDF
-        const pdfUrl = 'cardápio-quintal-do-bigode.pdf';
+        const pdfUrl = "cardapio-quintal-do-bigode.pdf';"
 
         // Carregar PDF
         pdfjsLib.getDocument(pdfUrl).promise.then(function(pdf) {
